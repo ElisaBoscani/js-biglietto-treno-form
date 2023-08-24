@@ -11,6 +11,9 @@ h1,
 h2 {
   text-align: center;
 }
+.text_left {
+  text-align: left;
+}
 button {
   padding: 20px;
 }
@@ -31,4 +34,9 @@ div > input {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.tiket {
+  display: flex;
+  justify-content: space-between;
 }
