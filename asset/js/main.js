@@ -7,6 +7,8 @@ generates.addEventListener("click", function (e) {
   const price = kilometres * 0.21;
   console.log(price);
   console.log(nameSurname, userAge);
+
+  //costo con scontistica
   let total;
   if (userAge < 18) {
     let discount = price * (20 / 100);
@@ -40,4 +42,15 @@ generates.addEventListener("click", function (e) {
   //prezzo finale
   const finalTiketPrice = document.getElementById("price_tk");
   finalTiketPrice.innerHTML = finalPrice;
+
+  //alert
+  if (isNaN(kilometres)) {
+    alert("Devi scrivere la distanza in numeri");
+    finalTiketPrice.innerHTML = "errore";
+  }
+  if (isNaN(userAge)) {
+    alert("devi inserire la tua età in numero");
+    finalTiketPrice.innerHTML = "errore";
+    offer.innerHTML = "errore";
+  }
 });

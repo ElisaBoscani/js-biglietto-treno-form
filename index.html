@@ -8,52 +8,56 @@
   </head>
   <body>
     <h1>Calcola il prezzo del biglietto</h1>
-    <div class="dati">
-      <div>
-        <h2>Nome e Cognome</h2>
+    <div class="container bg_color">
+      <div class="dati">
         <div>
-          <input id="nameSurname" type="text" />
+          <h2>Nome e Cognome</h2>
+          <div>
+            <input id="nameSurname" type="text" />
+          </div>
+        </div>
+        <div>
+          <h2>KM da percorrere</h2>
+          <div>
+            <input id="kilometres" type="text" />
+          </div>
+        </div>
+        <div>
+          <h2>Fascia d'età</h2>
+          <div>
+            <input id="userAge" type="text" />
+          </div>
         </div>
       </div>
-      <div>
-        <h2>KM da percorrere</h2>
-        <div>
-          <input id="kilometres" type="text" />
-        </div>
+
+      <div class="btn">
+        <button>Genera</button>
       </div>
-      <div>
-        <h2>Fascia d'età</h2>
-        <div>
-          <input id="userAge" type="text" />
-        </div>
-      </div>
-    </div>
-    <div class="btn">
-      <button>Genera</button>
     </div>
     <h1>Il tuo biglietto</h1>
-
-    <h2 class="text_left">Dettaglio Passeggeri</h2>
-    <div class="tiket">
-      <div>
-        <h3>Nome Passeggero</h3>
-        <span id="text_name"></span>
-      </div>
-      <div>
-        <h4>offerta</h4>
-        <span id="offer"></span>
-      </div>
-      <div>
-        <h4>Carozza</h4>
-        <span id="carriage"></span>
-      </div>
-      <div>
-        <h4>Codice cp</h4>
-        <span id="code"></span>
-      </div>
-      <div>
-        <h4>Costo biglietto</h4>
-        <span id="price_tk"></span>
+    <div class="container bg_color height">
+      <h2 class="text_left">Dettaglio Passeggeri</h2>
+      <div class="tiket">
+        <div>
+          <h3>Nome Passeggero</h3>
+          <span id="text_name"></span>
+        </div>
+        <div>
+          <h3>Offerta</h3>
+          <span id="offer"></span>
+        </div>
+        <div>
+          <h3>Carozza</h3>
+          <span id="carriage"></span>
+        </div>
+        <div>
+          <h3>Codice cp</h3>
+          <span id="code"></span>
+        </div>
+        <div>
+          <h3>Costo biglietto</h3>
+          <span id="price_tk"></span>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="./asset/js/main.js"></script>
