@@ -53,4 +53,8 @@ generates.addEventListener("click", function (e) {
     finalTiketPrice.innerHTML = "errore";
     offer.innerHTML = "errore";
   }
+  if (!isNaN(nameSurname)) {
+    alert(" Non puoi scrivere numeri, solo lettere");
+    textName.innerHTML = "errore";
+  }
 });
