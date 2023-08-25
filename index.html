@@ -19,13 +19,17 @@
         <div>
           <h2>KM da percorrere</h2>
           <div>
-            <input id="kilometres" type="text" />
+            <input id="kilometres" type="number" />
           </div>
         </div>
         <div>
           <h2>Fascia d'età</h2>
           <div>
-            <input id="userAge" type="text" />
+            <select id="userAge" required>
+              <option value="minor">Minorenne</option>
+              <option value="adult" selected>Adulto</option>
+              <option value="over65">Over-65</option>
+            </select>
           </div>
         </div>
       </div>
